@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="./header.css">
+	<title>instafiling</title>
+</head>
+
+<style>
+	/* .search_gst_container {
+		width: 80%;
+		margin: 0 auto;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+	} */
+
+	
+</style>
+
+<body>
+	<div class="logo center">
+		<img src="icon.svg"> </>
+	</div>
+
+	<header>
+
+		<div class="header-container">
+			<div class="logo">
+				<img src="./icon.svg" alt="">
+			</div>
+
+
+			<div class="header-menu">
+				<a href=""><img src="./svg/home.svg" alt=""> Home </a>
+				<span>|</span>
+				<a href=""><img src="./svg/profile-icong.svg" alt=""> profile </a>
+			</div>
+
+		</div>
+	</header>
+
+
+	<div class="container-wrapper flex_container">
+		<div class="search_gst_container">
+			<div class="search">
+				<input type="text" placeholder="Enter GSTIN" value="24aaecf4970d1zu">
+				<img class="eyex" src="./svg/search.svg" alt="">
+			</div>
+
+			<p class="result">Result</p>
+			<div class="card-container">
+
+				<div class="card" onclick="expand()">
+					<p> finzo ventures pvt ltd. </p>
+					<img src="./svg/right-icon.svg" alt="">
+				</div>
+			
+			</div>
+
+		</div>
+
+		<div class="banner_img">
+			<img src="images/search_banner.svg" alt="">
+		</div>
+
+	</div>	
+
+	<div class="footer">
+		<div class="home">
+			<img src="./svg/home.svg" alt="">
+		</div>
+
+		<div class="home">
+			<img src="./svg/profile-icong.svg" alt="">
+		</div>
+	</div>
+
+
+	<script>
+		function expand() {
+			window.location = './drop-down.html'
+		}
+	</script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="./header.css">
+	<title>Filling History</title>
+</head>
+
+<body>
+
+	<div class="logo center">
+		<img src="icon.svg"> </>
+	</div>
+
+	<header>
+		<div class="header-container">
+			<div class="logo">
+				<img src="./icon.svg" alt="">
+			</div>
+
+			<div class="header-menu">
+				<a href=""><img src="./svg/home.svg" alt=""> Home </a>
+				<span>|</span>
+				<a href=""><img src="./svg/profile-icong.svg" alt=""> profile </a>
+			</div>
+
+		</div>
+	</header>
+
+	<div class="details-container">		
+		<h2 class="small_device">GST Filling History</h2>
+		<div class="details">
+			<div class="company">FINZO VENTURES PVT LTD.</div>
+			<div class="text"> GST Number - 24aaecf4970d1zu</div>
+		</div>
+		<h2 class="large_device">GST Filling History</h2>
+		<div class="year">
+			FY 21-22
+			<img src="./svg/right-icon.svg" alt="">
+		</div>
+	</div>
+
+
+
+	<div class="container-wrapper history_wrapper flex_container">
+		<div class="filling-history-container">
+
+			<div class="tax-grid">
+				<div class="heading">
+					<h6>TAX PERIOD</h6>
+				</div>
+
+				<div class="tax-period-months">
+					<div class="month">Apr</div>
+					<div class="month">May</div>
+					<div class="month">Jun</div>
+					<div class="month">Jul</div>
+					<div class="month">Aug</div>
+					<div class="month">Sep</div>
+					<div class="month">Oct</div>
+					<div class="month">Nov</div>
+					<div class="month">Dec</div>
+					<div class="month">Jan</div>
+					<div class="month">Feb</div>
+					<div class="month">Mar</div>
+				</div>
+			</div>
+
+			<div class="gst-column">
+				<div class="heading">
+					<h6>GSTR1</h6>
+				</div>
+			</div>
+
+			<div class="gst-column">
+				<div class="heading">
+					<h6>GSTR2</h6>
+				</div>
+			</div>
+
+			<div class="gst-column">
+				<div class="heading">
+					<h6>GSTR3</h6>
+				</div>
+			</div>
+
+
+		</div>
+
+		<div class="banner_img">
+			<img src="images/fill_history.svg" alt="">
+		</div>
+	</div>
+
+
+	<div class="footer">
+		<div class="home">
+			<img src="./svg/home.svg" alt="">
+		</div>
+
+		<div class="home">
+			<img src="./svg/profile-icong.svg" alt="">
+		</div>
+	</div>
+
+
+
+	<script>
+
+		const gstcolumn = document.querySelectorAll('.gst-column')
+
+		gstcolumn.forEach(elem => {
+			for (let i = 0; i < 12; i++) {
+				let val = document.createElement('div')
+				val.classList.add('gst-column-data')
+
+				if (Math.floor(Math.random() * 1000) % 7 === 0) { 
+					val.innerHTML = `
+				<div class="gst-status">
+					<img  src="./svg/alert.svg" />
+			</div>`
+					elem.appendChild(val)
+
+				}else {
+					val.innerHTML = `
+				<div class="gst-status">
+					<img  src="./svg/check.svg" />
+			</div>`
+					elem.appendChild(val)
+
+
+
+				}
+			}
+		})
+
+
+
+	</script>
+
+
+
+</body>
+
+</html>

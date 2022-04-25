@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="./header.css">
+	<!-- <link rel="stylesheet" href="./css/drop-down.css"> -->
+	<title>instafiling</title>
+</head>
+
+<style>
+
+</style>
+
+<body>
+	<div class="logo center">
+		<img src="icon.svg"> </>
+	</div>
+
+
+	<header>
+
+		<div class="header-container">
+			<div class="logo">
+				<img src="./icon.svg" alt="">
+			</div>
+
+
+			<div class="header-menu">
+				<a href=""><img src="./svg/home.svg" alt=""> Home </a>
+				<span>|</span>
+				<a href=""><img src="./svg/profile-icong.svg" alt=""> profile </a>
+			</div>
+
+		</div>
+	</header>
+
+	<div class="container-wrapper searchGst_container_wrapper flex_container">
+		<div class="searchGst_container">
+			<div class="search">
+				<input type="text" placeholder="Enter GSTIN" value="24aaecf4970d1zu">
+				<img class="eyex" src="./svg/search.svg" alt="">
+			</div>
+
+			<div class="card-container">
+				<p class="result">Result</p>
+				<div class="card">
+					<div class="header" onclick="collapse()">
+						<p> finzo ventures pvt ltd. </p>
+						<img src="./svg/down-icon.svg" alt="">
+					</div>
+					<div class="content">
+
+						<!-- GST DETAILS  -->
+						<p>GST DETAILS </p>
+						<div class="card">
+							<table>
+								<tr>
+									<td>GST Number</td>
+									<td> 24aaecf4970d1zu</td>
+								</tr>
+								<tr>
+									<td>GST Status</td>
+									<td> Active </td>
+								</tr>
+
+								<tr>
+									<td>Filling Frequency</td>
+									<td> Monthly </td>
+								</tr>
+								<tr>
+									<td>Tax Payer Type </td>
+									<td> Regular</td>
+								</tr>
+							</table>
+						</div>
+
+						<!-- company details  -->
+						<p>COMPANY DETAILS</p>
+						<div class="card">
+							<div class="details">
+								<h3>Business Name</h3>
+								<p>FINZO VENTURES PVT LTD.</p>
+							</div>
+
+							<div class="details">
+								<h3>Address</h3>
+								<p>
+									TF-312, 3rd Floor, Swami Narayan Business Park, Opp.Gokulesh Petrol Pump, Narol Cross Road,
+									Ahmedabad,
+									Gujarat - 382405
+								</p>
+							</div>
+
+							<div class="details">
+								<h3>Date of Registration</h3>
+								<p>23, April 2021</p>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<button class="gst-history">GST Filling History</button>
+
+			<br><br>
+
+		</div>
+
+		<div class="banner_img">
+			<img src="images/search_banner.svg" alt="">
+		</div>
+
+	</div>
+
+
+	<div class="footer">
+		<div class="home">
+			<img src="./svg/home.svg" alt="">
+		</div>
+
+		<div class="home">
+			<img src="./svg/profile-icong.svg" alt="">
+		</div>
+	</div>
+
+
+	<script>
+		function collapse() {
+			window.location = './search-gst.html'
+		}
+
+	</script>
+
+</body>
+
+</html>

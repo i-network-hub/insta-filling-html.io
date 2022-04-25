@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./style.css">
+	<link rel="stylesheet" href="./css/signup.css">
+	<title>Sign Up</title>
+
+
+
+</head>
+
+<body>
+
+	<div class="logo left">
+		<img src="icon.svg"> </>
+	</div>
+
+	<div class="container">
+
+		<div class="uploadImg_div profile">
+			<img src="profile.svg"> </>
+		</div>
+
+		<input type="file" id="profile-upload" accept="image/*">
+		<label for="profile-upload" class="upload">upload image</label>
+
+		<input type="email" placeholder="Enter your email ">
+
+		<div class="password">
+			<input type="password" placeholder="Password">
+			<img class="eye" src="./svg/eye.svg" type="" />
+		</div>
+
+		<p class="input-or or">or</p>
+		<input type="text" placeholder="Mobile Number">
+
+		<div class="button-container">
+			<button>continue </button>
+			<p class="or">or</p>
+			<button class="google">Sign-in-with
+				<img src="./google.svg" alt="">
+			</button>
+		</div>
+
+	</div>
+
+	<script>
+
+		const uploadImg = document.querySelector('.uploadImg_div');
+		const profileUpload = document.querySelector("#profile-upload")
+
+		profileUpload.addEventListener('change', getImagePath);
+
+		function getImagePath(event) {
+			console.log(event);
+			var file = URL.createObjectURL(event.target.files[0]);
+
+			console.log(file);
+			if (file) {
+				uploadImg = ""
+			}
+			uploadImg.innerHTML = "<img src='" + file + "'>";
+		}
+
+	</script>
+
+</body>
+
+</html>

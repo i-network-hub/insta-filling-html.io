@@ -1,0 +1,89 @@
+.container {
+  margin: 2rem auto;
+  width: 80%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.upload {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  display: block;
+  font-size: 1.5rem;
+  color: #2e53da;
+  cursor: pointer;
+}
+
+#google {
+  display: flex;
+}
+
+input {
+  width: 100%;
+  background-color: #fff;
+  border: none;
+  outline: none;
+  padding: 0.75rem;
+  display: block;
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+  border-radius: 4px;
+}
+
+input::placeholder {
+  color: #b4b4b4;
+  font-size: 1.05rem;
+}
+
+.input-or {
+  text-align: left;
+  font-size: 1.25rem;
+}
+
+.button-container {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.or {
+  color: #b4b4b4;
+  font-size: 1.25rem;
+}
+
+button {
+  font-size: 14px;
+  min-width: 140px;
+  box-shadow: 1.3205479383468628px 1.9808220863342285px 3.301370143890381px 0px
+    #00000057;
+}
+
+button.google {
+  display: flex;
+  background-color: #f2f6fe;
+  box-shadow: 1.32055px 1.98082px 3.30137px rgba(0, 0, 0, 0.34);
+  color: #2e53da;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#profile-upload {
+  display: none;
+}
+
+.password {
+  position: relative;
+}
+
+.eye {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+}
+
+@media screen and (max-width: 450px) {
+  .container {
+    width: 94%;
+  }
+}

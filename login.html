@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="./style.css"> -->
+    <link rel="stylesheet" href="css/style.css">
+	<!-- <link rel="stylesheet" href="./css/signup.css"> -->
+	<title>Login</title>
+
+
+
+</head>
+
+<body>
+
+	<div class="logo left">
+		<img src="icon.svg"> 
+	</div>
+
+	<div class="container login_container">
+
+        <div class="container_heading">
+            <h2>Login</h2>
+        </div>
+
+        <form action="">
+            <div class="input_field">
+                <input type="email" placeholder="Enter your email ">
+            </div>    
+
+            <div class="password">
+                <input type="password" placeholder="Password" id="password">
+                <img class="eye" id="showPassword" src="./svg/eye.svg" type="" />
+                <img class="eye" id="hidePassword" src="./svg/eye.svg" type="" />
+            </div>
+
+            <p class="input-or or">or</p>
+            <div class="input_field">
+                <input type="text" placeholder="Mobile Number">
+            </div>
+            
+
+            <div class="button-container">
+                <button>continue </button>
+                <p class="or">or</p>
+                <button class="google">Login-with
+                    <img src="./google.svg" alt="">
+                </button>
+            </div>
+        </form>    
+
+	</div>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(function(){
+            $("#showPassword").on('click', function(){
+                $("#password").attr('type', 'text');
+                $("#hidePassword").show();
+                $("#showPassword").hide();
+                return false;
+            });
+            $("#hidePassword").on('click', function(){
+                $("#password").attr('type', 'password');
+                $("#showPassword").show();
+                $("#hidePassword").hide();
+                return false;
+            });
+        });
+    </script>
+</body>
+
+</html>
